@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Vota{% endblock %}
+{% block content %}
+<h1>{{ question }}</h1>
+{% if error_message %}
+<div class="alert">
+    <p>{{ error_message }}</p>
+</div>
+{% endif %}
+<form method="post">
+    {% csrf_token %}
+    {% for c in question.choise_set.all %}
+    <input type="radio"
+    name="choice"
+    id="choice_{{ c.id }}"
+    value="{{ c.id }}">
+    <label for="choice_{{ c.id }}">{{ c.choise_text }}</label>
+    <br>
+    {% endfor %}
+    <input type="submit" value="Votar">
+</form>
+{% endblock %}
