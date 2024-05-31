@@ -1,6 +1,6 @@
 body {
-    font-family: Lato, sans-serif;
-    background-color: #f2f2f2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c6c6c6;
 }
   
 .container {
@@ -9,17 +9,20 @@ body {
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
   
 h1 {
     color: #333;
+    text-align: center;
     margin-bottom: 10px;
     font-weight: bold;
 }
   
 ul {
     list-style: none;
+    text-align: center;
     padding: 0;
     margin: 0;
 }
@@ -32,7 +35,8 @@ li {
   
 a {
     text-decoration: none;
-    color: #337ab7;
+    text-align: center;
+    color: #7eafda;
 }
   
 a:hover {
@@ -44,5 +48,5 @@ li:nth-child(odd) {
 }
   
 li:nth-child(even) {
-    background-color: #ddf2f2;
+    background-color: #a5d6f9;
 }
